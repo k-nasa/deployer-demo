@@ -11,6 +11,13 @@ jobs:
       url: https://example.com
     steps:
       - run: echo deploy staging
+
+  deploy_sandbox:
+    runs-on: ubuntu-latest
+    environment:
+      name: sandbox
+    steps:
+      - run: echo deploy staging
   
   deploy_production:
     runs-on: ubuntu-latest
