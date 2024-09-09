@@ -23,6 +23,7 @@ on:
 
 env:
   GITHUB_SHA: ${{ inputs.branch }}
+  GITHUB_HEAD_REF: ${{ inputs.branch }}
 jobs:
   deploy:
     runs-on: ubuntu-latest
